@@ -1,0 +1,56 @@
+body {
+  height: 100vh;
+  background-image: url('./Recurso5.svg'), url('./Fondo.jpg');
+  background-position: center center, bottom left;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.botonJugar img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 10%;
+}
+
+.grupoTerra {
+  width: 25%;
+  margin: 0 auto;
+  display: block;
+}
+
+.celebramos {
+  margin: 10px auto;
+  width: 30%;
+}
+
+p {
+  text-align: center;
+  color: black;
+  /* font-weight: 600; */
+  font-size: 15px;
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 748px) {
+  .botonJugar img {
+    width: 40%;
+    margin-top: 15px;
+  }
+
+  .grupoTerra {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+
+  .celebramos {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 90%;
+    display: block;
+  }
+}

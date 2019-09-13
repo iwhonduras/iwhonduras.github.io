@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grupo Terra</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript">
+      function random() {
+        console.log('yes');
+        var num = Math.ceil(Math.random() * 2) - 1;
+        var tiles = document.getElementsByClassName('tile');
+        var images = [
+          'url(./ImagenCompleta1.jpg)',
+          'url(./ImagenCompleta2.jpg)'
+        ];
+        var i;
+        for (i = 0; i < tiles.length; i++) {
+          tiles[i].style.backgroundImage = images[num];
+        }
+        document.getElementById('answer').style.background = images[num];
+      }
+    </script>
+  </head>
+  <body>
+    <div class="puzzle">
+      <div class="heading">
+        <img src="./GT NEGRO.png" alt="" />
+      </div>
+      <div class="answer" id="answer"></div>
+      <div class="grid">
+        <button class="tile tile--1" style="--area:A"></button>
+        <button class="tile tile--2" style="--area:B"></button>
+        <button class="tile tile--3" style="--area:C"></button>
+        <button class="tile tile--4" style="--area:D"></button>
+        <button class="tile tile--5" style="--area:E"></button>
+        <button class="tile tile--6" style="--area:F"></button>
+        <button class="tile tile--7" style="--area:G"></button>
+        <button class="tile tile--8" style="--area:H"></button>
+        <div class="tile tile--empty" style="--area:I"></div>
+      </div>
+      <a href="./index.html"
+        ><img src="./BotonRegresar.png" alt="Regresar" class="regresar"
+      /></a>
+      <p>Desarrollado por Ideaworks International - 2019 ©</p>
+    </div>
+    <script src="https://unpkg.com/animate-css-grid@latest"></script>
+    <script src="./script.js"></script>
+  </body>
+  <script>
+    random();
+  </script>
+</html>
